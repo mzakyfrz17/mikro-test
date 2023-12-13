@@ -8,6 +8,7 @@ const AddProduct = () => {
   const [address, setAddress] = useState("");
   const [price, setPrice] = useState("");
   const [desc, setDesc] = useState(""); // Tambahkan state untuk desc
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [file, setFile] = useState("");
   const [preview, setPreview] = useState("");
   const navigate = useNavigate();
@@ -25,7 +26,9 @@ const AddProduct = () => {
     formData.append("title", title);
     formData.append("address", address);
     formData.append("price", price);
-    formData.append("desc", desc); // Tambahkan field desc ke FormData
+    formData.append("desc", desc); 
+    formData.append("phoneNumber", phoneNumber);
+    // Tambahkan field desc ke FormData
 
     try {
       await axios.post("http://localhost:5000/products", formData, {
@@ -98,7 +101,20 @@ const AddProduct = () => {
                 placeholder="Product Description"
               />
             </div>
-  
+
+
+            <div className="mb-3">
+              <label htmlFor="phoneNumber" className="form-label">
+                No Whatsapp
+              </label>
+            <input
+              type="text"
+              className="form-control"
+              id="phoneNumber"
+              value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}
+              placeholder="Phone/WhatsApp Number"/>
+            </div>
+
             <div className="mb-3">
               <label htmlFor="productImage" className="form-label">
                 Image

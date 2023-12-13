@@ -11,7 +11,7 @@ class WhatsappButton extends React.Component {
 
   render() {
     return (
-      <button className="btn btn-primer" onClick={this.redirectToWhatsapp}>
+      <button className="btn btn-primer whatsapp" onClick={this.redirectToWhatsapp}>
         <i className="fa-brands fa-whatsapp"></i> Whatsapp
       </button>
     );

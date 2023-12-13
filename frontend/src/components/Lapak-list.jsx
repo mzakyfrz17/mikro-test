@@ -8,20 +8,21 @@ import { useNavigate } from "react-router-dom";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
+  
 
   useEffect(() => {
     getProducts();
   }, []);
 
   const getProducts = async () => {
-    const response = await axios.get(`http://192.168.1.12:5000/products`);
+    const response = await axios.get(`http://localhost:5000/products`);
 
     setProducts(response.data);
   };
 
   const deleteProduct = async (productId) => {
     try {
-      await axios.delete(`http://192.168.1.12:5000/products/${productId}`);
+      await axios.delete(`http://localhost:5000/products/${productId}`);
       getProducts();
     } catch (error) {
       console.log(error);

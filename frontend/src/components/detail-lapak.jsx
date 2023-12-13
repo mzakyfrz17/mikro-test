@@ -56,7 +56,7 @@ const Detail = () => {
                 <div className="col-md-4">
                     <h5>Rp 1.000.000/Bulan</h5>
                     <div className="card mb-3 shadow w-75">
-                        <div className="card-body profile-container d-flex">
+                        <div className="card profile-container d-flex">
                             <Image src={user} alt="Profil 1" className="profile-img"/>
                             <div className="profile-info ms-3">
                                 <p>Subkhi M</p>

@@ -1,6 +1,6 @@
 import {Sequelize} from "sequelize";
 
-const db = new Sequelize('upload_db','root','',{
+const db = new Sequelize('mikroid','root','',{
     host: 'localhost',
     dialect: "mysql"
 });

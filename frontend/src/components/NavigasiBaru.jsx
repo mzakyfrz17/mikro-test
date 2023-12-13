@@ -43,10 +43,10 @@ const NavigasiBaru = () => {
                   <a href="/form">Sewakan Lapak</a>
                 </button>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <a href="/lapak" className="nav-link">Cari Lapak</a>
               </li>
-              <button onClick={logout} className="button is-light">
+              <button onClick={logout} className="button is-light rounded-3">
                   Log out
                 </button>
 
