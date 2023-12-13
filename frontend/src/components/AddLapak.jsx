@@ -43,9 +43,9 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container-form p-5 mt-4">
+      <h2>Lengkapi data berikut ini</h2>
       <div className="row justify-content-center">
-        <div className="col-md-6">
           <form onSubmit={saveProduct}>
             <div className="mb-3">
               <label htmlFor="productName" className="form-label">
@@ -134,13 +134,12 @@ const AddProduct = () => {
             )}
   
             <div className="mb-3">
-              <button type="submit" className="btn btn-success">
+              <button type="submit" className="btn btn-primer">
                 Save
               </button>
             </div>
           </form>
         </div>
-      </div>
     </div>
   );
   

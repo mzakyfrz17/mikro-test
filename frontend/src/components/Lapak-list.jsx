@@ -32,6 +32,7 @@ const ProductList = () => {
   const navigate = useNavigate();
   return (
     <div className="container mt-5 ">
+      <h2 className="fw-bold">Daftar Lapak Tersedia</h2>
       <div className="row ">
         {products.map((product) => (
           <div className=" col-lg-3 col-md-4 col-sm-6 mb-4 " key={product.id}>

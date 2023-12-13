@@ -30,20 +30,21 @@ const NavigasiBaru = () => {
     <>
       <nav className="navbar sticky-top navbar-expand-lg px-3">
         <div className="container-fluid align-self-center">
-          <NavLink to="/" className="navbar-brand fw-bold"><h3 >Mikro.Id</h3></NavLink>
+        <h3> <NavLink to="/" className="navbar-brand fw-bold">Mikro.id
+          </NavLink></h3>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                   aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse p-3 bg-white rounded-3" id="navbarTogglerDemo02">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
+              <li className="nav-item me-3">
                 <button className="rounded-3 py-2">
                   <i className="fa-solid fa-bullhorn"></i>
                   <a href="/form">Sewakan Lapak</a>
                 </button>
               </li>
-              <li className="nav-item ">
+              <li className="nav-item me-3 ">
                 <a href="/lapak" className="nav-link">Cari Lapak</a>
               </li>
               <button onClick={logout} className="button is-light rounded-3">
